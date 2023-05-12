@@ -1,0 +1,41 @@
+.phy-main{
+    height: 88vh;
+}
+
+
+.phy-heading{
+    font-weight: 500;
+    text-align: center;
+    color:#45e171;
+    margin: 5px;
+    padding: 10px;
+}
+
+.phy-women-chr{
+   
+    border: 2px solid #2806b1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.phy-women-chr>div{
+    border: 2px solid #d01313;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 5px;
+    gap: 30px;
+}
+
+.phy-women-chr>div>button{
+    border: 2px solid #d0d013;
+   font-style: italic;
+   font-family: fantasy;
+   padding: 10px;
+    color: #3daed0;
+    background: #f8e5e5;
+}
+
+
+

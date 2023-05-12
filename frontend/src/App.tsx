@@ -1,13 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Physical from './Pages/PhysicalFitness/Physical';
+import Exercise from './Pages/PhysicalFitness/Exercise';
+import AllRoute from './components/AllRoute';
+
 
 function App() {
   return (
     <div className="App">
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <AllRoute/>
     </div>
   );
 }
