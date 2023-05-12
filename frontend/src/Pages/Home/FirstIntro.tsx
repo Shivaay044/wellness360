@@ -68,8 +68,13 @@ const FirstIntro = (props: Props) => {
           </Heading>
 
           <Text fontSize={{ base: "md", lg: "lg" }} color={"#5D0000"}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
+            At WeFit, our mission is simple: to empower and inspire individuals
+            to lead healthier, happier lives. We strive to provide a
+            comprehensive solution that makes it easy and enjoyable for our
+            users to achieve their fitness goals, make informed choices about
+            their diet and exercise routines, and connect with a community of
+            like-minded individuals. Join us on this journey towards a healthier
+            and happier you!
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
             <Button

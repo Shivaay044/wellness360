@@ -62,56 +62,70 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 };
 const SimpleCardWrapper = (props: any) => {
   return (
-    <Box p={4}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
-          Short heading
+    <Box p={4} m={5}>
+      <Stack spacing={4} as={Container} maxW={"6xl"} textAlign={"center"}>
+        <Heading
+          fontSize={{ base: "2xl", sm: "4xl" }}
+          fontWeight={"bold"}
+          color="#5D0000"
+        >
+          Key Features of WEFIT
         </Heading>
-        <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          obcaecati ut cupiditate pariatur, dignissimos, placeat amet officiis.
+        <Text
+          color="#5D0000"
+          fontSize={{ base: "sm", sm: "lg" }}
+          textAlign="center"
+        >
+          Discover the comprehensive suite of features that WeFit offers to help
+          you achieve your fitness goals and make informed choices about your
+          wellness journey. From personalized goal tracking and workout routines
+          to nutritional guidance and community support, WeFit provides all the
+          tools you need to lead a healthy lifestyle. Explore our key features
+          below to learn more.
         </Text>
       </Stack>
 
       <Container maxW={"5xl"} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
-            heading={"Heading"}
+            heading={"Set Your Goals and Track Your Progress"}
             icon={<Icon as={FcAssistant} w={10} h={10} />}
             description={
-              "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+              "Set achievable fitness goals and track your progress with our goal tracking tools, progress analytics, and milestone tracking features."
             }
             href={"#"}
           />
           <Card
-            heading={"Heading"}
+            heading={"Customize Your Workout Routines"}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
             description={
-              "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+              "Choose from pre-designed workout routines or create custom ones to fit your individual needs and goals, with step-by-step instructions and progress tracking for each exercise."
             }
             href={"#"}
           />
           <Card
-            heading={"Heading"}
+            heading={"Eat Well and Stay on Track with Nutritional Guidance"}
             icon={<Icon as={FcDonate} w={10} h={10} />}
             description={
-              "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+              "t personalized meal plans, recipe suggestions, and calorie tracking tools to make informed choices about your diet based on your preferences and dietary restrictions."
             }
             href={"#"}
           />
           <Card
-            heading={"Heading"}
+            heading={"Connect with Like-Minded Individuals in Our Community"}
             icon={<Icon as={FcManager} w={10} h={10} />}
             description={
-              "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+              "Join our community of like-minded individuals and connect with others, participate in challenges, and engage in discussion groups for support and motivation."
             }
             href={"#"}
           />
           <Card
-            heading={"Heading"}
+            heading={
+              "Stay on Top of Your Wellness with Reminders and Notifications"
+            }
             icon={<Icon as={FcAbout} w={10} h={10} />}
             description={
-              "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+              "Stay consistent with your workouts and goals with personalized reminders and notifications tailored to your preferences and schedule."
             }
             href={"#"}
           />
