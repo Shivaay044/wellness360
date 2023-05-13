@@ -1,16 +1,17 @@
-import "./App.css";
-import Home from "./Pages/Home/Home";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Mentalhelth from './Pages/Mentalhelth';
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Physical from './Pages/PhysicalFitness/Physical';
+import Exercise from './Pages/PhysicalFitness/Exercise';
+import AllRoute from './components/AllRoute';
+
+
 function App() {
   return (
     <div className="App">
-     <Navbar />
-      <Home />
-      <Footer />
-    </div>
-  );
+    <AllRoute/>
+  </div> )
 }
 
 export default App;
