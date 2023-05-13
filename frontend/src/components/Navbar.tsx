@@ -25,21 +25,40 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import Logo from "../Images/Logo.png";
+import { useEffect, useState } from "react";
 
 type Props = {};
 
 function Navbar({}: Props) {
+  const [navbarBgColor, setNavbarBgColor] = useState("#F8F4EB");
   const { isOpen, onToggle } = useDisclosure();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition >= 5) {
+        setNavbarBgColor("#FFCCBC");
+      } else {
+        setNavbarBgColor("#F8F4EB");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Box>
       <Flex
+        boxShadow="0px 3px 5px rgba(0, 0, 0, 0.04)"
         position="fixed"
         top="0"
         left="0"
         right="0"
         zIndex="9999"
-        color={useColorModeValue("#F8F4EB", "white")}
+        color={useColorModeValue("#FFE1E0", "white")}
         backgroundColor="#F8F4EB"
         minH={"60px"}
         w={"100%"}
@@ -49,6 +68,7 @@ function Navbar({}: Props) {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        style={{ backgroundColor: navbarBgColor }}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -72,7 +92,7 @@ function Navbar({}: Props) {
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+            // color={useColorModeValue("gray.800", "white")}
           >
             <Image w={150} src={Logo} alt="logo" />
           </Text>
@@ -80,20 +100,6 @@ function Navbar({}: Props) {
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
-
-          {/* <Flex
-            display={{ base: "none", md: "flex" }}
-            ml={10}
-            top="0"
-            left="0"
-            right="0"
-            zIndex="9999"
-            bg="white"
-            boxShadow="md"
-            position="fixed"
-          >
-            <DesktopNav />
-          </Flex> */}
         </Flex>
 
         <Stack
