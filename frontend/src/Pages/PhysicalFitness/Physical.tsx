@@ -31,12 +31,17 @@ function Physical() {
     <h1 className="phy-heading">Welcome to virtual Gym we will Happy to Help you!!</h1>
    <div className="phy-women-chr">
    <img src="https://i.graphicmama.com/uploads/2019/4/5cb4989c2da3d-cute-fitness-woman-cartoon-vector-character-1.png"/>
-   <div>
+   <div className="phy-contianer">
+   <div className="phy-btn">
      {
         workout.map((el:string)=>(
             <button onClick={()=>handleClick(el)}>{el}</button>
         ))
      }
+   </div>
+   <div className="phy-desc">
+   Physical fitness refers to an individual's overall health and ability to perform daily activities with ease and energy. It is achieved through regular exercise, a healthy diet, and lifestyle choices. Physical fitness has several components, including cardiovascular endurance, muscular strength and endurance, flexibility, and body composition. Being physically fit not only improves physical health but also enhances mental well-being and quality of life. Maintaining good physical fitness levels requires commitment to healthy habits and regular exercise.
+   </div>
    </div>
    </div>
   </div>;
