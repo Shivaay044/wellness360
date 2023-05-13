@@ -19,7 +19,7 @@ const mentalhelth = () => {
       <div className={styles.container} >
 
       <div className={styles.childOne} >
-        <h1>Wellness-360 Services</h1>
+       
           <Accordion>
                 <AccordingPanelComponent title='Yoga' body='yoga practice creates mental clarity and calmness, increases body awareness, 
                                                             relieves chronic stress patterns, relaxes the mind, centers 
@@ -112,10 +112,10 @@ const mentalhelth = () => {
 
       <div className={styles.childTwo} >
         <div  style={{marginTop:"30%"}} > 
-            <p style={{fontSize:"30px",fontWeight:"bold",color:"#e6e4e0"}} >Why Mental Health</p>
+            <p style={{fontSize:"30px",fontWeight:"bold",color:"black"}} >Why Mental Health ?</p>
                 <br/>
 
-                <p style={{fontSize:"20px",color:"white"}} >
+                <p style={{fontSize:"20px",color:"black"}} >
 
                 Being mentally ill is not a joke. It is a most painful thing. If you have physical ailments, 
                 you will get everyone’s compassion, but when you have a mental ailment, you will get laughter, 

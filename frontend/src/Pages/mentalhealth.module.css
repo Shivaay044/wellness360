@@ -1,13 +1,12 @@
 .container{
-    background-image: url("https://media.tenor.com/O_hMn2MaFroAAAAC/meditation-concentrate.gif");
+    /* https://media.tenor.com/O_hMn2MaFroAAAAC/meditation-concentrate.gif */
+    background-image: url("https://images.everydayhealth.com/images/emotional-health/meditation/a-complete-guide-to-meditation-722x406.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     min-height: 100vh;
     border: 0px solid black;
-    /* height: 105vh; */
     width: 100%;
 }
 
@@ -15,17 +14,18 @@
     border: 0px solid black;
     height: 100%;
     width: 30%;
-    color: #e6e4e0;
+    /* color: #e6e4e0; */
+    color: black;
    
 }
 
 .childTwo{
-  color: #e6e4e0;
   align-items: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 0px solid black;
   height: 100%;
-  width: 50%;
+  width: 30%;
+  color: black;
 } 
 .video{
 width: 100%;
