@@ -9,9 +9,9 @@ function App() {
      <Navbar />
       <Home />
       <Footer />
-    
     </div>
   );
 }
 
 export default App;
+//
