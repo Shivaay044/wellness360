@@ -33,8 +33,8 @@ const AccordingPanelComponent = (props:{title:String, body:String}) => {
 
 
     
-    <br/>
-    <hr style={{color:"white"}} />
+    {/* <br/> */}
+    {/* <hr style={{color:"white"}} /> */}
     </>
   )
 }

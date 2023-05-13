@@ -36,8 +36,8 @@ const VideoComponent = (props:{title:String, body:String}) => {
     </div>
     </AccordionPanel>
 </AccordionItem>  
-  <br/>
-  <hr style={{color:"white"}} />
+  {/* <br/>
+  <hr style={{color:"white"}} /> */}
     </>
   )
 }

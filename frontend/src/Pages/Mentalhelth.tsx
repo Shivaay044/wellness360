@@ -74,8 +74,8 @@ const mentalhelth = () => {
                     </div>
                     </AccordionPanel>
                 </AccordionItem>  
-                  <br/>
-                  <hr style={{color:"white"}} />
+                  {/* <br/>
+                  <hr style={{color:"white"}} /> */}
                                                                      
                 <AccordingPanelComponent title='Videos' body='Engaging in activities you enjoy, such as watching movies, can be beneficial. 
                                                               It could boost your mental health, relieve stress, and foster relationships.

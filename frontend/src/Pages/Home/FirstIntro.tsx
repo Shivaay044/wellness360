@@ -7,6 +7,7 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+
 import graphic1 from "../../Images/HomePageGraphic.png";
 import Logo2 from "../../Images/Logo2.png";
 type Props = {};

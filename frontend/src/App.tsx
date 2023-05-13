@@ -6,9 +6,10 @@ import Mentalhelth from './Pages/Mentalhelth';
 function App() {
   return (
     <div className="App">
-     <Navbar />
+     {/* <Navbar />
       <Home />
-      <Footer />
+      <Footer /> */}
+      <Mentalhelth/>
     </div>
   );
 }
