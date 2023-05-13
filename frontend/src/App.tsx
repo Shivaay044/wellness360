@@ -1,12 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Pages/Home/Home";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import Mentalhelth from './Pages/Mentalhelth';
 function App() {
   return (
     <div className="App">
-     <Mentalhelth/>
-      
+     <Navbar />
+      <Home />
+      <Footer />
     </div>
   );
 }
