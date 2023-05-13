@@ -1,5 +1,6 @@
 .phy-main{
-    height: 88vh;
+    height: 100vh;
+    background: #E3F2C1;
 }
 
 
@@ -12,23 +13,24 @@
 }
 
 .phy-women-chr{
-   
-    border: 2px solid #2806b1;
-    height: 100%;
+    /* border: 2px solid #2806b1; */
+    height: 88%;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.phy-women-chr>div{
-    border: 2px solid #d01313;
+.phy-btn{
+    /* border: 2px solid #13d058; */
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding: 5px;
     gap: 30px;
+    margin: 10px;
+    width: 70%;
 }
 
-.phy-women-chr>div>button{
+.phy-btn>button{
     border: 2px solid #d0d013;
    font-style: italic;
    font-family: fantasy;
@@ -38,4 +40,20 @@
 }
 
 
+.phy-contianer{
+/* border: 1px solid #ca2727; */
+}
 
+
+.phy-desc{
+    /* border: 1px solid #000; */
+    margin: 10px;
+    width: 80%;
+    margin-top: 100px;
+    display: flex;
+   justify-content:center;
+   text-align: justify;
+   font-weight: 500;
+   color: #2C3333;
+   margin-left: 100px;
+}
