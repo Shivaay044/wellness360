@@ -1,20 +1,20 @@
-import "./App.css";
-import Home from "./Pages/Home/Home";
-import Login from "./Pages/Login/Login";
-import Signup from "./Pages/Signup/Signup";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Physical from './Pages/PhysicalFitness/Physical';
+import Exercise from './Pages/PhysicalFitness/Exercise';
+import AllRoute from './components/AllRoute';
+
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <Home /> */}
-      {/* <Footer /> */}
-      {/* <Signup /> */}
-      <Login />
-    </div>
-  );
+
+    <AllRoute/>
+  </div> )
+
 }
 
 export default App;
