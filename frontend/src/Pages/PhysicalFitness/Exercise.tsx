@@ -20,7 +20,7 @@ export default function Exercise() {
    console.log(exercise)
 
   return (
-   <div>
+   <div style={{backgroundColor:"#9ed9c7"}} >
      {
       exercise.map((el:any)=>(
         <Center py={6}>
@@ -30,10 +30,10 @@ export default function Exercise() {
           w={{ sm: '100%', md: '540px' }}
           height={{ sm: '476px', md: '20rem' }}
           direction={{ base: 'column', md: 'row' }}
-          bg={'white'}
+          bg={'#9ed9c7'}
           boxShadow={'2xl'}
           padding={4}>
-          <Flex flex={1} bg="blue.200">
+          <Flex flex={1} bg="#9ed9c6">
             <Image
               objectFit="cover"
               boxSize="100%"
